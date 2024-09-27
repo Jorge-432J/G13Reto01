@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title>
+    <link rel-"stylesheel" type-text/css" href-"./styles.css"/>
+    <script src-"./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="Foto HDV.jpg" alt="Tu foto" class="photo" id="photo">
+
+        
+        <section class="section" id="info-personal">
+            <h2>Informacion Personal</h2>
+            <p><strong>Nombre:</strong> <span id="nombre">Jorge Eliecer Marin Castillo</span></p>
+            <p><strong>Email:</strong> <span id="email">jorge.marin.talentotech@usa.edu.co</span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono">+573115512931</span></p>
+            <p><strong>Ubicación:</strong> <span id="ubicación">Bogota, Cundinamarca / Colombia</span></p>
+        </section>
+
+        <section class="section" id="objetivo">
+            <h2>Objetivo Profesional</h2>
+            <p id="objetivo-text">Es diseñar, desarrollar y optimizar soluciones tecnológicas que mejoren la gestión de información y procesos en las organizaciones, mediante el análisis de requerimientos, la creación de aplicaciones, la administración de bases de datos, la automatización de procesos y el soporte técnico continuo, asegurando siempre la calidad, seguridad y escalabilidad de las soluciones implementadas..</p>
+        </section>
+
+        <section class="section" id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div id="experiencia-list">
+                <!-- La experiencia laboral se agregará aquí dinámicamente -->
+            </div>
+        </section>
+
+        <section class="section" id="educacion">
+            <h2>Educación</h2>
+            <div id="educacion-list">
+                <!-- La educación se agregará aquí dinámicamente -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Cargar datos de ejemplo al cargar la página
+        window.onload = cargarDatosEjemplo;
+    </script>
+</body>
+</html>
