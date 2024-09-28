@@ -3,7 +3,7 @@ body {
     font-size: 12pt;
     line-height: 2;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #fff;
     color: #000;
 }
@@ -11,7 +11,6 @@ body {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 h1, h2, h3 {
     font-weight: bold;
@@ -31,19 +30,12 @@ h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
-.header {
-    background-color: #ff0000;
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
 .profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto 20px;
 }
 .section {
     margin-bottom: 20px;
