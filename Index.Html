@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Hoja de Vida</title>
-    <link rel-"stylesheel" type-text/css" href-"./styles.css"/>
-    <script src-"./script.js"></script>
+    <title>Hoja de Vida - Jorge Eliecer Marin Castillo</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="Foto HDV.jpg" alt="Tu foto" class="photo" id="photo">
-
+        <h1>Curriculum Vitae</h1>
         
-        <section class="section" id="info-personal">
-            <h2>Informacion Personal</h2>
-            <p><strong>Nombre:</strong> <span id="nombre">Jorge Eliecer Marin Castillo</span></p>
-            <p><strong>Email:</strong> <span id="email">jorge.marin.talentotech@usa.edu.co</span></p>
-            <p><strong>Teléfono:</strong> <span id="telefono">+573115512931</span></p>
-            <p><strong>Ubicación:</strong> <span id="ubicación">Bogota, Cundinamarca / Colombia</span></p>
-        </section>
-
-        <section class="section" id="objetivo">
+        <img src="/api/placeholder/150/150" alt="Jorge Eliecer Marin Castillo" class="profile-img">
+        
+        <div class="section" id="personal-info">
+            <h2>Información Personal</h2>
+            <p class="indent">Nombre: Jorge Eliecer Marin Castillo</p>
+            <p class="indent">Dirección: Carrera 7 A Este # 90a-46 Sur</p>
+            <p class="indent">Ciudad: Bogotá, Colombia</p>
+            <p class="indent">Teléfono: 3175841886</p>
+            <p class="indent">Correo electrónico: jorge.marin.talentotech@usa.edu.co</p>
+        </div>
+        
+        <div class="section" id="professional-objective">
             <h2>Objetivo Profesional</h2>
-            <p id="objetivo-text">Es diseñar, desarrollar y optimizar soluciones tecnológicas que mejoren la gestión de información y procesos en las organizaciones, mediante el análisis de requerimientos, la creación de aplicaciones, la administración de bases de datos, la automatización de procesos y el soporte técnico continuo, asegurando siempre la calidad, seguridad y escalabilidad de las soluciones implementadas..</p>
-        </section>
-
-        <section class="section" id="experiencia">
+            <p class="indent">Es diseñar, desarrollar y optimizar soluciones tecnológicas que mejoren la gestión de información y procesos en las organizaciones, mediante el análisis de requerimientos, la creación de aplicaciones, la administración de bases de datos, la automatización de procesos y el soporte técnico continuo, asegurando siempre la calidad, seguridad y escalabilidad de las soluciones implementadas.</p>
+        </div>
+        
+        <div class="section" id="work-experience">
             <h2>Experiencia Laboral</h2>
-            <div id="experiencia-list">
-                <!-- Mi experiencia como asesor me ha permitido desarrollar habilidades en análisis de necesidades, optimización de procesos y gestión de información, alineadas con las competencias de un tecnólogo en análisis y desarrollo de sistemas de información. He aplicado soluciones tecnológicas para resolver problemas operativos y mejorar la eficiencia de los clientes, lo que refuerza mi capacidad para diseñar y desarrollar sistemas efectivos. -->
+            <div class="experience-item">
+                <h3>Asesor</h3>
+                <p class="indent">Staffing (2024 - Presente)</p>
+                <button onclick="toggleDetails('staffing-details')">Ver detalles</button>
+                <p id="staffing-details" class="hidden indent">Mi experiencia como asesor me ha permitido desarrollar habilidades en análisis de necesidades, optimización de procesos y gestión de información, alineadas con las competencias de un tecnólogo en análisis y desarrollo de sistemas de información. He aplicado soluciones tecnológicas para resolver problemas operativos y mejorar la eficiencia de los clientes, lo que refuerza mi capacidad para diseñar y desarrollar sistemas efectivos.</p>
             </div>
-        </section>
-
-        <section class="section" id="educacion">
+            <div class="experience-item">
+                <h3>Asesor</h3>
+                <p class="indent">Web Help (2023 - 2024)</p>
+                <button onclick="toggleDetails('webhelp-details')">Ver detalles</button>
+                <p id="webhelp-details" class="hidden indent">Mi experiencia como asesor me ha permitido desarrollar habilidades en análisis de necesidades, optimización de procesos y gestión de información, alineadas con las competencias de un tecnólogo en análisis y desarrollo de sistemas de información. He aplicado soluciones tecnológicas para resolver problemas operativos y mejorar la eficiencia de los clientes, lo que refuerza mi capacidad para diseñar y desarrollar sistemas efectivos.</p>
+            </div>
+        </div>
+        
+        <div class="section" id="education">
             <h2>Educación</h2>
-            <div id="educacion-list">
-                <!-- Durante mi formación como tecnólogo en sistemas, aprendí a convertir problemas en soluciones digitales. Adquirí las habilidades necesarias para analizar las necesidades de una empresa, diseñar sistemas informáticos a medida, y desarrollar software eficiente y seguro. -->
+            <div class="education-item">
+                <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+                <p class="indent">SENA (2021)</p>
             </div>
-        </section>
+        </div>
     </div>
 
     <script>
-        // Cargar datos de ejemplo al cargar la página
-        window.onload = cargarDatosEjemplo;
+
     </script>
 </body>
 </html>
