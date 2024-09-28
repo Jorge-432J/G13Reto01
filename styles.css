@@ -3,7 +3,7 @@ body {
     font-size: 12pt;
     line-height: 2;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #fff;
     color: #000;
 }
@@ -11,7 +11,7 @@ body {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);    
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 h1, h2, h3 {
     font-weight: bold;
