@@ -5,4 +5,4 @@ function toggleDetails(id) {
     } else {
         details.classList.add('hidden');
     }
-}  
+}
