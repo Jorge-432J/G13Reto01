@@ -2,52 +2,39 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
-
 .container {
     width: 80%;
-    max-width: 900px;
     margin: auto;
     overflow: hidden;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 header {
-    background: #35424a;
+    background:  #35424a;
     color: white;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
     text-align: center;
 }
-
 header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-
 h1, h2 {
     margin-bottom: 20px;
-    text-align: center;
 }
-
 section {
     margin-bottom: 20px;
     padding: 20px;
     background: #fff;
 }
-
-#experiencia li, #education li {
+#experiencia li, #education li { 
     margin-bottom: 10px;
 }
-Last edited just now
