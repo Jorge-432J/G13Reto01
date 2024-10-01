@@ -3,58 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida - Jorge Eliecer Marin Castillo</title>
-    <style>
-        
-    </style>
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" type="text/css"= href="style.css"/>
+    <script src="./scripts.js"></script>
+    
 </head>
 <body>
+    <header>
+        <img src="Foto HDV.jpg" alt="Tu foto" id="photo">
+        <h1>Jorge Eliecer Marin Castillo</h1>
+    </header>    
+
     <div class="container">
-        <h1>Curriculum Vitae</h1>
-        
-        <img src="/fotoHDV.jpg" alt="Jorge Eliecer Marin Castillo" id="profile-img">
-        
-        <div class="section" id="personal-info">
+        <section id-"info-personal">
             <h2>Información Personal</h2>
-            <p class="indent">Nombre: Jorge Eliecer Marin Castillo</p>
-            <p class="indent">Dirección: Carrera 7 A Este # 90a-46 Sur</p>
-            <p class="indent">Ciudad: Bogotá, Colombia</p>
-            <p class="indent">Teléfono: 3175841886</p>
-            <p class="indent">Correo electrónico: jorge.marin.talentotech@usa.edu.co</p>
-        </div>
-        
-        <div class="section" id="professional-objective">
+            <p>Email: jorge.marin.talentotech@usa.edu.co</p>
+            <p>Teléfono: +573125513617</p>
+            <p>Ubicación: Bogotá, Colombia</p>
+        </section>
+    
+        <section id="Objetivo">
             <h2>Objetivo Profesional</h2>
-            <p class="indent">Es diseñar, desarrollar y optimizar soluciones tecnológicas que mejoren la gestión de información y procesos en las organizaciones, mediante el análisis de requerimientos, la creación de aplicaciones, la administración de bases de datos, la automatización de procesos y el soporte técnico continuo, asegurando siempre la calidad, seguridad y escalabilidad de las soluciones implementadas.</p>
-        </div>
+            <p>Es diseñar, desarrollar y optimizar soluciones tecnológicas que mejoren la gestión de información y procesos en las organizaciones, mediante el análisis de requerimientos, la creación de aplicaciones, la administración de bases de datos, la automatización de procesos y el soporte técnico continuo, asegurando siempre la calidad, seguridad y escalabilidad de las soluciones implementadas...</p>
+        </section>
         
-        <div class="section" id="work-experience">
+        <section id="experiencia">
             <h2>Experiencia Laboral</h2>
-            <div class="experience-item">
-                <h3>Asesor</h3>
-                <p class="indent">Staffing (2024 - Presente)</p>
-                <button onclick="toggleDetails('staffing-details')">Ver detalles</button>
-                <p id="staffing-details" class="hidden indent">Mi experiencia como asesor me ha permitido desarrollar habilidades en análisis de necesidades, optimización de procesos y gestión de información, alineadas con las competencias de un tecnólogo en análisis y desarrollo de sistemas de información. He aplicado soluciones tecnológicas para resolver problemas operativos y mejorar la eficiencia de los clientes, lo que refuerza mi capacidad para diseñar y desarrollar sistemas efectivos.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Asesor</h3>
-                <p class="indent">Web Help (2023 - 2024)</p>
-                <button onclick="toggleDetails('webhelp-details')">Ver detalles</button>
-                <p id="webhelp-details" class="hidden indent">Mi experiencia como asesor me ha permitido desarrollar habilidades en análisis de necesidades, optimización de procesos y gestión de información, alineadas con las competencias de un tecnólogo en análisis y desarrollo de sistemas de información. He aplicado soluciones tecnológicas para resolver problemas operativos y mejorar la eficiencia de los clientes, lo que refuerza mi capacidad para diseñar y desarrollar sistemas efectivos.</p>
-            </div>
-        </div>
-        
-        <div class="section" id="education">
+            <ul id="lista-experiencia">
+                <!-- La experiencia laboral se añadirá aquí dinámicamente -->
+            </ul>
+        </section>
+    
+        <section id="educacion">
             <h2>Educación</h2>
-            <div class="education-item">
-                <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
-                <p class="indent">SENA (2021)</p>
-            </div>
-        </div>
+            <ul id="lista-educacion">
+                <!-- La educacion se añadirá aquí dinámicamente -->
+            </ul>    
+        </section>
     </div>
 
     <script>
-        
+    // Llamar a las funciones cuando se cargue la pagina
+    window.onload = funtion() {
+        añadirExperiencias();
+        añadirEducacion();
+    };      
     </script>
 </body>
 </html>
