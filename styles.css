@@ -1,37 +1,33 @@
 body {
     font-family: Times New Roman, serif;
     font-size: 12pt;
-    line-height: 1.5;
+    line-height: 2;
     color: #000;
     background-color: #fff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
     width: 8.5in;
-    margin: 1in;
+    margin: 1in auto;
     padding: 1in;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
-.header {
+header {
     text-align: center;
     margin-bottom: 1in;
 }
 
 .photo-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
+    width: 2in;
+    height: 2in;
+    margin: 0.5in auto;
     overflow: hidden;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 
 .profile-photo {
@@ -41,8 +37,10 @@ body {
 }
 
 h1 {
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: bold;
+    margin-bottom: 0.5in;
+    text-align: center;
 }
 
 h2 {
@@ -50,6 +48,7 @@ h2 {
     font-weight: bold;
     margin-top: 0.5in;
     margin-bottom: 0.25in;
+    text-align: left;
 }
 
 h3 {
@@ -57,34 +56,35 @@ h3 {
     font-weight: bold;
     margin-top: 0.25in;
     margin-bottom: 0.125in;
+    text-align: left;
 }
 
 p {
     margin-bottom: 0.25in;
+    text-align: justify;
 }
 
 .date {
     font-style: italic;
 }
 
-.hidden {
-    display: none;
+ul {
+    margin-top: 0.125in;
+    margin-bottom: 0.25in;
+    padding-left: 0.4in;
 }
 
-button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 10pt;
+li {
+    margin-bottom: 0.125in;
 }
 
-button:hover {
-    background-color: #e0e0e0;
-}
-
-.section {
+section {
     margin-bottom: 0.5in;
+}
+
+@page {
+    size: letter;
+    margin: 1in;
 }
 
 @media print {
@@ -92,6 +92,7 @@ button:hover {
         background-color: #fff;
     }
     .container {
+        width: 100%;
         box-shadow: none;
         margin: 0;
         padding: 0;
